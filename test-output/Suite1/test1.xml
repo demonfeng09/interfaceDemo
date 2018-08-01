@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="feng-PC" tests="2" failures="0" timestamp="17 Jul 2018 09:42:27 GMT" time="0.072" errors="0">
+  <testcase name="abc" time="0.007" classname="myTest"/>
+  <testcase name="function1" time="0.012" classname="myTest"/>
+</testsuite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--可以同时开启多条线程进行测试任务-->
+<suite name="Suite1"  parallel="methods" thread-count="2">
+    <test name="test1" preserve-order="true">
+        <!-- 按照方法名顺序执行-->
+        <parameter name="pwd" value="password"></parameter>
+        <classes>
+            <class name="myTest" >
+                <methods>
+                    <include name="function1"></include>
+                    <include name="abc"></include>
+                </methods>
+            </class>
+        </classes>
+
+
+        <!-- 分组执行
+        <groups>
+            <run>
+                <include name="group2"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="myTest"></class>
+        </classes>
+        -->
+    </test>
+</suite>

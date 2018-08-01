@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="xushizhaodeMacBook-Pro.local" tests="3" failures="0" timestamp="1 Jul 2018 13:01:30 GMT" time="0.058" errors="0">
+  <testcase name="abc" time="0.035" classname="test"/>
+  <testcase name="abc1" time="0.002" classname="test"/>
+  <testcase name="function3" time="0.001" classname="test"/>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="72" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+    <groups>
+      <group name="group1">
+        <method signature="myTest.abc()" name="abc" class="myTest"/>
+      </group>
+    </groups>
+    <test name="test1" duration-ms="72" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+      <class name="myTest">
+        <test-method status="PASS" signature="BeforClass()" name="BeforClass" is-config="true" duration-ms="24" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+        </test-method>
+        <test-method status="PASS" signature="function1(java.lang.String)" name="function1" duration-ms="12" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="abc()" name="abc" duration-ms="7" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+        </test-method>
+        <test-method status="PASS" signature="AfterClass()" name="AfterClass" is-config="true" duration-ms="1" started-at="2018-07-17T17:42:27Z" finished-at="2018-07-17T17:42:27Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

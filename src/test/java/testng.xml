@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" >
+    <!--测试套件可以包含一个或多个测试用例-->
+    <!--<test name="test1">-->
+        <!--<classes>-->
+            <!--<class name="testngTestDemo" >-->
+            <!--</class>-->
+
+        <!--</classes>-->
+    <!--</test>-->
+
+    <parameter name="username" value="xxxxxxxx" />
+
+    <!--按顺序执行测试方法-->
+    <test name="test2" preserve-order="true">
+        <classes>
+            <class name="testngTestDemo" >
+                <methods>
+                    <include name="function8" />
+
+                    <!--<include name="function2" />-->
+                    <!--<include name="function1" />-->
+                    <!--&lt;!&ndash;<include name="function3" />&ndash;&gt;-->
+                    <!--<include name="function7" />-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--<test name="test3">-->
+        <!--&lt;!&ndash;分组测试&ndash;&gt;-->
+        <!--<groups>-->
+
+            <!--<run>-->
+                <!--<include name="group1"></include>-->
+                <!--<include name="group2"></include>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <!--<classes>-->
+            <!--<class name="testngTestDemo"></class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+
+</suite>
+
+
+
+
+<!--可以同时开启多条线程进行测试任务-->
+<!--<suite name="Suite1"  parallel="classes" thread-count="2">-->
+<!--<test name="test12">-->
+    <!--<classes>-->
+        <!--<class name="testngTestDemo" >-->
+        <!--</class>-->
+
+    <!--</classes>-->
+<!--</test>-->
+<!--</suite>-->
+
