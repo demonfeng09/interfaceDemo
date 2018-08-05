@@ -128,7 +128,8 @@ public class jsonDemoTest {
 
         for(int i=0;i<topics.size();i++){
 
-            System.out.println(response.jsonPath().get("topics["+i+"].user.id"));
+            //System.out.println(response.jsonPath().get("topics["+i+"].user.id"));
+
 //            topics[0].user.id
 //            topics[1].user.id
             //期望值 ，是需要从数据库、或第三方来源得到
