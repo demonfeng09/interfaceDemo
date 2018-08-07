@@ -1,22 +1,19 @@
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
-import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-@RunWith(Parameterized.class)
+
+@RunWith (Parameterized.class)
 public class DataTest {
 
     @Parameterized.Parameters
+    @SuppressWarnings("unchecked")
     public static Integer[][] data(){
         return new Integer[][]{
-                {4,9},{2,3}
+                {4,9},{2,3},{1,1}
         };
     }
 
