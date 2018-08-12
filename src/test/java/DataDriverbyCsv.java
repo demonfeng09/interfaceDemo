@@ -23,7 +23,8 @@ public class DataDriverbyCsv {
         CsvMapper mapper = new CsvMapper();
         CsvSchema schema = mapper.schemaFor(DataClass.class);
         File csvFile = new File(DataDriverbyCsv.class.getResource("data/input.csv").getFile());
-        MappingIterator<DataClass> it = mapper.readerFor(DataClass.class).with(schema).readValues(csvFile);
+//        MappingIterator<DataClass> it = mapper.readerFor(DataClass.class).with(schema).readValues(csvFile);
+        MappingIterator<DataClass> it = mapper.reader(DataClass.class).with(schema).readValues(csvFile);
         while (it.hasNext()){
             DataClass row = it.next();
             data.add(row);

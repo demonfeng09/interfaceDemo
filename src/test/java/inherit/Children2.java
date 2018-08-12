@@ -4,6 +4,9 @@ import org.junit.*;
 import org.junit.experimental.categories.Category;
 import org.junit.runners.MethodSorters;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Children2 extends Base {
 
@@ -30,6 +33,7 @@ public class Children2 extends Base {
 
     @Test
     public void demo2Children01(){
+        assertThat(1,equalTo(2));
         System.out.println("demo2Children01");
     }
 }
