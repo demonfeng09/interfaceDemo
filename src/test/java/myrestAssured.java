@@ -1,9 +1,10 @@
 import org.junit.Assert;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.junit.runners.Parameterized;
+
 
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
